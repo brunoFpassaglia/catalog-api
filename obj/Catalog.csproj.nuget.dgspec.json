@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/passaglia/Documentos/projects/Catalog/Catalog.csproj": {}
+    "C:\\Users\\brunop\\Documents\\projects\\catalog-api\\Catalog.csproj": {}
   },
   "projects": {
-    "/home/passaglia/Documentos/projects/Catalog/Catalog.csproj": {
+    "C:\\Users\\brunop\\Documents\\projects\\catalog-api\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/passaglia/Documentos/projects/Catalog/Catalog.csproj",
+        "projectUniqueName": "C:\\Users\\brunop\\Documents\\projects\\catalog-api\\Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "/home/passaglia/Documentos/projects/Catalog/Catalog.csproj",
-        "packagesPath": "/home/passaglia/.nuget/packages/",
-        "outputPath": "/home/passaglia/Documentos/projects/Catalog/obj/",
+        "projectPath": "C:\\Users\\brunop\\Documents\\projects\\catalog-api\\Catalog.csproj",
+        "packagesPath": "C:\\Users\\brunop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brunop\\Documents\\projects\\catalog-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/passaglia/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\brunop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,12 +53,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.0, 6.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

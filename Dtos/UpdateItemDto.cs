@@ -1,8 +1,9 @@
+
 using System.ComponentModel.DataAnnotations;
 
 namespace Catalog.Dtos
 {
-    public record CreateItemDto
+    public record UpdatetemDto
     {
         [Required]
         public string Name { get; init; }

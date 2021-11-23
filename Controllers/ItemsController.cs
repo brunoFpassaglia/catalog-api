@@ -25,14 +25,14 @@ namespace Catalog.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Item> GetItem(Guid id)
+        public ActionResult<ItemDto> GetItem(Guid id)
         {
             var item = repository.GetItem(id);
             if (item is null)
             {
                 return NotFound();
             }
-            return item;
+            return item.asDto();
         }
 
         [HttpPost]
@@ -42,6 +42,40 @@ namespace Catalog.Controllers
             repository.CreateItem(item);
             // return item.asDto();
             return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.asDto());
+
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateItem(Guid id, UpdatetemDto itemDto)
+        {
+            var item = repository.GetItem(id);
+            if (item is null)
+            {
+                return NotFound();
+
+            }
+
+            Item updateItem = item with
+            {
+                Name = itemDto.Name,
+                Price = itemDto.Price
+            };
+
+            repository.UpdateItem(updateItem);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteItem(Guid id)
+        {
+            var item = repository.GetItem(id);
+            if (item is null)
+            {
+                return NotFound();
+            }
+            repository.DeleteItem(id);
+            return NoContent();
         }
     }
+
 }
